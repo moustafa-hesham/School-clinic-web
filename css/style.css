@@ -33,7 +33,7 @@
 /* ======================================== */
 /* Start Header Section */
 .landing{
-    background-image: url('./img/landing.jpg');
+    background-image: url('../img/landing.jpg');
     height: 600px;
     background-size: cover;
     position: relative;
@@ -174,7 +174,7 @@ header .main-title{
 .services{
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url('./img/services-bck2.png'),url('./img/services-bck1.png');
+    background-image: url('../img/services-bck2.png'),url('../img/services-bck1.png');
     /* height: 600px; */
     width: 100%;
     background-size: cover;
