@@ -33,7 +33,7 @@
 /* ======================================== */
 /* Start Header Section */
 .landing{
-    background-image: url('/img/landing.jpg');
+    background-image: url('./img/landing.jpg');
     height: 600px;
     background-size: cover;
     position: relative;
@@ -87,7 +87,7 @@ header .nav-bar li a{
 
 header span button{
 background-color: #ed7c6a;
-color: white;
+color: white;  
 padding: 10px 15px;
 border: none;
 border-radius: 2px;
@@ -95,17 +95,24 @@ font-size: 14px;
 font-weight: bold;
 }
 header .main-title{
-    background-color: #6eac95;
+    background-color: #6eac95ab;
     display: flex;
+    justify-content: center;
     color: white;
-    max-width: 600px;
-    font-size: 52px;
-    text-align: center;
+    width: 100%;
+    max-width: 45%;
+    font-size: 28px;
     padding: 50px;
-    border-radius: 40px;
+    border-radius: 2px;
     position: absolute;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+    header .main-title{
+        font-size: 18px;
+    }
 }
 /* End Header Section */
 /* ======================================== */
@@ -167,7 +174,7 @@ header .main-title{
 .services{
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url('/img/services-bck2.png'),url('/img/services-bck1.png');
+    background-image: url('./img/services-bck2.png'),url('./img/services-bck1.png');
     /* height: 600px; */
     width: 100%;
     background-size: cover;
@@ -250,6 +257,7 @@ font-size: 18px;
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
 }
+
 .footer .container{
     color: white;
 }
@@ -271,6 +279,12 @@ font-size: 18px;
     font-size: 14px;
     text-align: center;
 }
+@media (max-width:767px) {
+    .footer .left p{
+
+        font-size: 14px;
+    }
+}
 .footer .right{
     display: flex;
     justify-content: space-between;
@@ -281,12 +295,24 @@ font-size: 18px;
     color: #d28873;
     font-size: 25px;
 }
+@media (max-width:767px) {
+    .footer section .title{
+
+        font-size: 18px;
+    }
+}
 .footer section ul{
     list-style: none;
     padding-top: 10px;
 }
 .footer section ul li{
     padding: 10px 0;
+}
+@media (max-width:767px) {
+    .footer section ul li{
+
+        font-size: 14px;
+    }
 }
 .footer .bottom {
     width: fit-content;
